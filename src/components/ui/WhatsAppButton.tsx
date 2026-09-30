@@ -3,12 +3,13 @@ import { siteConfig } from "@/data/site";
 
 type WhatsAppButtonProps = {
   label?: string;
-  className?: string;
 };
+
+const buttonClasses =
+  "velloria-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#33271f] px-6 text-sm font-semibold tracking-wide text-[#ffffff] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#201914] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9a8068] focus-visible:ring-offset-2";
 
 export function WhatsAppButton({
   label = "WhatsApp Us",
-  className = "",
 }: WhatsAppButtonProps) {
   return (
     <a
@@ -16,10 +17,14 @@ export function WhatsAppButton({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`${label} on WhatsApp`}
-      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[var(--velloria-espresso)] px-6 text-sm font-semibold tracking-wide text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[var(--velloria-deep)] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--velloria-mocha)] focus-visible:ring-offset-2 ${className}`}
+      className={buttonClasses}
     >
-      <MessageCircle size={17} strokeWidth={1.8} />
-      {label}
+      <MessageCircle
+        size={17}
+        strokeWidth={1.8}
+        className="text-[#ffffff]"
+      />
+      <span className="text-[#ffffff]">{label}</span>
     </a>
   );
 }

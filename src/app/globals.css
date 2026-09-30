@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap");
+
 @import "tailwindcss";
 
 :root {
@@ -10,9 +11,6 @@
   --velloria-deep: #201914;
   --velloria-white: #fffdf9;
   --velloria-border: rgba(51, 39, 31, 0.12);
-
-  --background: var(--velloria-ivory);
-  --foreground: var(--velloria-espresso);
 }
 
 * {
@@ -25,16 +23,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--velloria-ivory);
+  color: var(--velloria-espresso);
   font-family: "DM Sans", sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-::selection {
-  background: var(--velloria-sand);
-  color: var(--velloria-deep);
 }
 
 a {
@@ -47,25 +38,19 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-button {
-  font: inherit;
-}
-
 .velloria-display {
   font-family: "Cormorant Garamond", serif;
 }
 
 .velloria-container {
-  width: min(100% - 2rem, 1200px);
+  width: min(100% - 2rem, 1280px);
   margin-inline: auto;
 }
 
 .velloria-eyebrow {
-  color: var(--velloria-mocha);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.2em;
-  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -73,19 +58,36 @@ button {
   padding-block: 5rem;
 }
 
-@media (min-width: 768px) {
-  .velloria-container {
-    width: min(100% - 4rem, 1200px);
-  }
-
-  .velloria-section {
-    padding-block: 7rem;
-  }
+.velloria-button {
+  background-color: #33271f !important;
+  color: #ffffff !important;
+  border: 0 !important;
+  opacity: 1 !important;
 }
 
-@media (min-width: 1280px) {
-  .velloria-container {
-    width: min(100% - 6rem, 1280px);
+.velloria-button:hover {
+  background-color: #201914 !important;
+  color: #ffffff !important;
+}
+
+.velloria-button:focus-visible {
+  outline: 2px solid #9a8068;
+  outline-offset: 2px;
+}
+
+.velloria-button,
+.velloria-button span,
+.velloria-button svg {
+  color: #ffffff !important;
+}
+
+.velloria-button svg {
+  stroke: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+  .velloria-section {
+    padding-block: 7rem;
   }
 }
 
