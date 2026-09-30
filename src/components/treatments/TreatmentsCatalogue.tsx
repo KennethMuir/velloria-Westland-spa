@@ -6,6 +6,7 @@ import { ArrowUpRight, Clock } from "lucide-react";
 import { motion } from "motion/react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import {
   treatmentCategories,
   treatments,
@@ -157,9 +158,7 @@ export function TreatmentsCta() {
 
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
             <Button href="/book">Book Your Visit</Button>
-            <Button href="https://wa.me/254115980301">
-              Ask Us on WhatsApp
-            </Button>
+            <WhatsAppButton label="Ask Us on WhatsApp" />
           </div>
         </div>
       </Container>
