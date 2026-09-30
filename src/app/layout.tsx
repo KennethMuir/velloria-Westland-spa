@@ -15,6 +15,32 @@ export const metadata: Metadata = {
     "luxury spa Nairobi",
     "wellness Nairobi",
   ],
+  authors: [{ name: "Velloria Westland Spa" }],
+  creator: "Velloria Westland Spa",
+  publisher: "Velloria Westland Spa",
+  formatDetection: {
+    telephone: true,
+    address: false,
+    email: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_KE",
+    siteName: "Velloria Westland Spa",
+    title: "Velloria Westland Spa | Luxury Wellness in Nairobi",
+    description:
+      "A refined wellness destination in Westlands, Nairobi, offering restorative treatments, spa rituals and personalized relaxation experiences.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Velloria Westland Spa | Luxury Wellness in Nairobi",
+    description:
+      "A refined wellness destination in Westlands, Nairobi, offering restorative treatments, spa rituals and personalized relaxation experiences.",
+  },
 };
 
 export default function RootLayout({
