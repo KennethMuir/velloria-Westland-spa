@@ -8,7 +8,7 @@ import {
   Maximize2,
   X,
 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   galleryCategories,
   galleryItems,
@@ -17,6 +17,10 @@ import {
 export function GalleryCatalogue() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+  const activeTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const previousActiveIndexRef = useRef<number | null>(null);
 
   const filteredItems =
     activeCategory === "All"
@@ -68,11 +72,70 @@ export function GalleryCatalogue() {
   }, [activeIndex, filteredItems.length]);
 
   useEffect(() => {
-    document.body.style.overflow =
-      activeIndex !== null ? "hidden" : "";
+    const wasOpen = previousActiveIndexRef.current !== null;
+    const isOpen = activeIndex !== null;
+
+    if (!wasOpen && isOpen) {
+      requestAnimationFrame(() => {
+        closeButtonRef.current?.focus();
+      });
+    }
+
+    if (wasOpen && !isOpen) {
+      requestAnimationFrame(() => {
+        activeTriggerRef.current?.focus();
+      });
+    }
+
+    previousActiveIndexRef.current = activeIndex;
+  }, [activeIndex]);
+
+  useEffect(() => {
+    if (activeIndex === null) {
+      return;
+    }
+
+    const dialog = dialogRef.current;
+
+    if (!dialog) {
+      return;
+    }
+
+    const handleTabKey = (event: KeyboardEvent) => {
+      if (event.key !== "Tab") {
+        return;
+      }
+
+      const focusableElements = Array.from(
+        dialog.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      );
+
+      if (focusableElements.length === 0) {
+        event.preventDefault();
+        return;
+      }
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+        return;
+      }
+
+      if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    };
+
+    dialog.addEventListener("keydown", handleTabKey);
 
     return () => {
-      document.body.style.overflow = "";
+      dialog.removeEventListener("keydown", handleTabKey);
     };
   }, [activeIndex]);
 
@@ -167,7 +230,10 @@ export function GalleryCatalogue() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 18 }}
                     transition={{ duration: 0.35 }}
-                    onClick={() => setActiveIndex(index)}
+                    onClick={(event) => {
+                      activeTriggerRef.current = event.currentTarget;
+                      setActiveIndex(index);
+                    }}
                     className={`group relative overflow-hidden rounded-[1.75rem] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9a8068] focus-visible:ring-offset-4 ${
                       featured
                         ? "sm:col-span-2 lg:col-span-7"
@@ -224,6 +290,7 @@ export function GalleryCatalogue() {
       <AnimatePresence>
         {activeItem && (
           <motion.div
+            ref={dialogRef}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-[#201914]/95 p-4 sm:p-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -243,6 +310,7 @@ export function GalleryCatalogue() {
             >
               <div className="absolute right-0 top-0 z-10">
                 <button
+                  ref={closeButtonRef}
                   type="button"
                   onClick={() => setActiveIndex(null)}
                   aria-label="Close gallery"

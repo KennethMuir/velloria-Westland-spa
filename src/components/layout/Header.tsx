@@ -62,6 +62,7 @@ export function Header() {
               type="button"
               aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
               aria-expanded={mobileOpen}
+              aria-controls="mobile-navigation"
               onClick={() => setMobileOpen((open) => !open)}
               className="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 text-white transition-colors hover:bg-white/10 lg:hidden"
             >
@@ -78,6 +79,7 @@ export function Header() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
+            id="mobile-navigation"
             className="overflow-hidden border-b border-white/10 bg-[var(--velloria-deep)] text-white lg:hidden"
           >
             <div className="velloria-container py-5">
