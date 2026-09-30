@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { siteConfig } from "@/data/site";
 
 export function VisitSection() {
   return (
@@ -21,10 +22,15 @@ export function VisitSection() {
           <div className="absolute -bottom-44 right-16 h-80 w-80 rounded-full border border-white/10" />
 
           <div className="relative max-w-3xl">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-white/60">
+            <a
+              href={siteConfig.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-white/60 transition-colors hover:text-white"
+            >
               <MapPin size={14} />
-              Westlands · Nairobi
-            </div>
+              <span>{siteConfig.address}</span>
+            </a>
 
             <h2 className="velloria-display mt-5 text-5xl leading-[0.95] sm:text-6xl md:text-7xl">
               Your time is worth

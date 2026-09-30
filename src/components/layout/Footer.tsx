@@ -1,4 +1,4 @@
-import { ArrowUpRight, MessageCircle } from "lucide-react";
+import { ArrowUpRight, MapPin, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
@@ -69,12 +69,17 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="velloria-eyebrow text-white/45">Your Details</p>
+            <p className="velloria-eyebrow text-white/45">Find Us</p>
 
-            <p className="mt-5 max-w-xs text-sm leading-7 text-white/60">
-              Our address, opening hours, email and additional contact
-              information will be added here as Velloria grows.
-            </p>
+            <a
+              href={siteConfig.mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex max-w-xs items-start gap-2 text-sm leading-7 text-white/60 transition-colors hover:text-white"
+            >
+              <MapPin size={17} className="mt-1 shrink-0" />
+              <span>{siteConfig.address}</span>
+            </a>
           </div>
         </div>
 

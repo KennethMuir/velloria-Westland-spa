@@ -4,6 +4,8 @@ export const siteConfig = {
   tagline: "A sanctuary for your senses.",
   whatsapp: "+254 115 980301",
   whatsappUrl: "https://wa.me/254115980301",
+  address: "Stima Lane, Westlands, Nairobi",
+  mapsUrl: "https://maps.google.com/?q=Stima+Lane+Westlands+Nairobi",
   navigation: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },

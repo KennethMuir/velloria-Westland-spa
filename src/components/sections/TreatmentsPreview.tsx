@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import { treatmentPreview } from "@/data/home";
@@ -67,7 +68,7 @@ export function TreatmentsPreview() {
                   {treatment.description}
                 </p>
 
-                <a
+                <Link
                   href="/treatments"
                   className="mt-7 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--velloria-deep)]"
                 >
@@ -76,7 +77,7 @@ export function TreatmentsPreview() {
                     size={14}
                     className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
                   />
-                </a>
+                </Link>
               </div>
             </motion.article>
           ))}
