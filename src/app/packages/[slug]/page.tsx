@@ -272,7 +272,7 @@ export default async function PackageDetailPage({
                   </div>
 
                   <div className="mt-7 space-y-3">
-                    <Button href="/book">Book This Package</Button>
+                    <Button href={`/book?type=package&slug=${spaPackage.slug}`}>Book This Package</Button>
                     <WhatsAppButton label="Ask About This Package" />
                   </div>
 

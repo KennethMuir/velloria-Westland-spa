@@ -176,7 +176,7 @@ export default async function TreatmentDetailPage({
                   </div>
 
                   <div className="mt-7 space-y-3">
-                    <Button href="/book">Book This Treatment</Button>
+                    <Button href={`/book?type=treatment&slug=${treatment.slug}`}>Book This Treatment</Button>
                     <WhatsAppButton label="Ask About This Treatment" />
                   </div>
 
