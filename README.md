@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Velloria Westland Spa
 
-## Getting Started
+A premium, responsive spa and wellness website for Velloria Westland Spa, located on Stima Lane, Westlands, Nairobi.
 
-First, run the development server:
+The website presents Velloria's treatments, packages, team, gallery, wellness philosophy, contact information and booking enquiry experience through a refined editorial-style interface.
 
-```bash
+## Project
+
+- Framework: Next.js 16.3.7
+- UI: React 19
+- Language: TypeScript
+- Styling: Tailwind CSS 4
+- Animation: Motion
+- Icons: Lucide React
+- Rendering: Next.js App Router
+- Repository: https://github.com/KennethMuir/velloria-Westland-spa.git
+
+## Business Information
+
+- Name: Velloria Westland Spa
+- Location: Stima Lane, Westlands, Nairobi
+- WhatsApp: +254 115 980301
+- Google Maps: Stima Lane, Westlands, Nairobi
+
+## Routes
+
+- /
+- /about
+- /treatments
+- /treatments/[slug]
+- /packages
+- /packages/[slug]
+- /team
+- /gallery
+- /book
+- /contact
+
+## Development
+
+Install dependencies with:
+
+npm install
+
+Start the development server with:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verification
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npx tsc --noEmit
 
-## Learn More
+npm run lint
 
-To learn more about Next.js, take a look at the following resources:
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Canonical website content is maintained in src/data/.
 
-## Deploy on Vercel
+Treatment catalogue: src/data/treatments.ts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Package catalogue: src/data/packages.ts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Team catalogue: src/data/team.ts
+
+Gallery catalogue: src/data/gallery.ts
+
+Site configuration: src/data/site.ts
+
+Booking configuration: src/data/booking.ts
+
+## Booking
+
+The booking experience is an enquiry handoff to WhatsApp rather than a real-time reservation system.
+
+Guests can choose a treatment or package, provide a preferred date and time, enter contact details, specify guests and add notes before opening a structured WhatsApp enquiry.
+
+The application does not claim real-time availability.
+
+## Design
+
+The visual system uses a warm editorial luxury palette with Cormorant Garamond and DM Sans typography.
+
+Shared UI components are located in src/components/ui/.
+
+## Accessibility
+
+The site includes responsive layouts, keyboard-accessible controls, visible focus states, semantic navigation, accessible forms, gallery keyboard navigation, focus restoration and reduced-motion support.
+
+## External Services
+
+- WhatsApp for booking and enquiries
+- Google Maps for location navigation
+- Unsplash-hosted temporary imagery
+
+## Production Configuration
+
+No production domain is currently configured.
+
+Canonical URLs, metadataBase, sitemap URLs and production Open Graph image URLs should be configured after the final production origin is established.
+
+## Branding
+
+No approved Velloria favicon, logo or social-sharing image is currently included.
+
+Default Create Next App public assets have been removed.
+
+## Repository
+
+Branch: main
+
+Remote: https://github.com/KennethMuir/velloria-Westland-spa.git
