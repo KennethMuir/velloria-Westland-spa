@@ -1,22 +1,22 @@
 import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { aboutPage } from "@/data/about";
-import { homeImages } from "@/data/home";
+import { pagePhotography } from "@/data/photography";
 
 export function AboutHero() {
   return (
     <section className="relative overflow-hidden bg-[#201914] pt-32 text-white sm:pt-36">
       <div className="absolute inset-0">
         <Image
-          src={homeImages.interior}
-          alt="Quiet spa interior at Velloria"
+          src={pagePhotography.about.hero.src}
+          alt={pagePhotography.about.hero.alt}
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-45"
+          className="object-cover opacity-100"
         />
-        <div className="absolute inset-0 bg-[#201914]/65" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#201914] via-[#201914]/30 to-transparent" />
+        <div className="absolute inset-0 bg-[#201914]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/85 via-[#201914]/20 to-transparent" />
       </div>
 
       <div className="velloria-container relative">
@@ -44,3 +44,4 @@ export function AboutHero() {
     </section>
   );
 }
+

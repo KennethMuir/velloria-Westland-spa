@@ -7,14 +7,14 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { contactPage } from "@/data/contact";
-import { homeImages } from "@/data/home";
+import { pagePhotography } from "@/data/photography";
 import { siteConfig } from "@/data/site";
 
 export function ContactHero() {
   return (
     <section className="relative flex min-h-[78vh] items-end overflow-hidden bg-[var(--velloria-deep)] text-white sm:min-h-[82vh]">
       <Image
-        src={homeImages.interior}
+        src={pagePhotography.contact.hero.src}
         alt="Velloria spa atmosphere"
         fill
         priority
@@ -22,8 +22,8 @@ export function ContactHero() {
         className="object-cover object-center"
       />
 
-      <div className="absolute inset-0 bg-black/55" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[var(--velloria-deep)] via-[var(--velloria-deep)]/45 to-black/20" />
+      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[var(--velloria-deep)]/65 via-[var(--velloria-deep)]/10 to-transparent" />
 
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
@@ -79,3 +79,8 @@ export function ContactHero() {
     </section>
   );
 }
+
+
+
+
+

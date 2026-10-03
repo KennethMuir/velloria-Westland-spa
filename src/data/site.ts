@@ -7,12 +7,15 @@ export const siteConfig = {
   address: "Stima Lane, Westlands, Nairobi",
   mapsUrl: "https://maps.google.com/?q=Stima+Lane+Westlands+Nairobi",
   navigation: [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/#treatments" },
     { label: "About", href: "/about" },
     { label: "Treatments", href: "/treatments" },
     { label: "Packages", href: "/packages" },
-    { label: "Our Team", href: "/team" },
+    { label: "Our Team", href: "/team#featured-team" },
     { label: "Gallery", href: "/gallery" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact", href: "/contact#send-enquiry" },
   ],
 } as const;
+
+
+

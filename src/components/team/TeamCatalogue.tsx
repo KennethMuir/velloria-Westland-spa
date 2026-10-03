@@ -1,23 +1,13 @@
+import { spaPhotography } from "@/data/photography";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { teamMembers } from "@/data/team";
 
-const teamImages = [
-  "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85",
-] as const;
+const teamImages = spaPhotography.team;
 
 export function TeamCatalogue() {
   return (
-    <section className="velloria-section bg-[#f8f5ef]">
+    <section id="featured-team" className="velloria-section bg-[#f8f5ef]">
       <div className="velloria-container">
         <div className="max-w-3xl">
           <p className="velloria-eyebrow text-[#9a8068]">
@@ -42,7 +32,7 @@ export function TeamCatalogue() {
             >
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src={teamImages[index]}
+                  src={teamImages[index].src}
                   alt={`${member.name}, ${member.role}`}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -94,3 +84,8 @@ export function TeamCatalogue() {
     </section>
   );
 }
+
+
+
+
+

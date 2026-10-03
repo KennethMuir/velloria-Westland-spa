@@ -1,18 +1,17 @@
+import { pagePhotography } from "@/data/photography";
+
 export const homeImages = {
-  hero:
-    "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=85",
-  massage:
-    "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85",
-  facial:
-    "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=85",
-  body:
-    "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=85",
-  package:
-    "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=85",
-  interior:
-    "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=1400&q=85",
-  detail:
-    "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=85",
+  hero: pagePhotography.home.hero.src,
+  massage: pagePhotography.home.massage.src,
+  facial: pagePhotography.home.facial.src,
+  body: pagePhotography.home.body.src,
+  package: pagePhotography.home.package.src,
+  interior: pagePhotography.home.interior.src,
+  detail: pagePhotography.home.detail.src,
+  galleryReception: pagePhotography.home.homeGallery.reception.src,
+  galleryWellness: pagePhotography.home.homeGallery.wellness.src,
+  galleryPortrait: pagePhotography.home.homeGallery.portrait.src,
+  galleryQuiet: pagePhotography.home.homeGallery.quiet.src,
 } as const;
 
 export const treatmentPreview = [
@@ -104,22 +103,23 @@ export const testimonials = [
 export const galleryItems = [
   {
     label: "The reception",
-    image: homeImages.interior,
+    image: homeImages.galleryReception,
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    label: "Treatment room",
-    image: homeImages.massage,
+    label: "Wellness ritual",
+    image: homeImages.galleryWellness,
     className: "md:row-span-2",
   },
   {
-    label: "Wellness ritual",
-    image: homeImages.detail,
+    label: "Quiet portrait",
+    image: homeImages.galleryPortrait,
     className: "",
   },
   {
-    label: "Quiet details",
-    image: homeImages.facial,
+    label: "A moment to breathe",
+    image: homeImages.galleryQuiet,
     className: "",
   },
 ] as const;
+

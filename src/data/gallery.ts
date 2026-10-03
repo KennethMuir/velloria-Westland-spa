@@ -1,3 +1,5 @@
+import { pagePhotography } from "@/data/photography";
+
 export type GalleryItem = {
   id: string;
   title: string;
@@ -14,8 +16,7 @@ export const galleryItems = [
     category: "The Space",
     description:
       "A quiet visual introduction to the considered atmosphere of Velloria.",
-    image:
-      "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=1400&q=85",
+    image: pagePhotography.gallery[0].src,
     featured: true,
   },
   {
@@ -24,8 +25,7 @@ export const galleryItems = [
     category: "Wellness",
     description:
       "Soft textures and warm tones create space for a slower rhythm.",
-    image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[1].src,
   },
   {
     id: "gallery-03",
@@ -33,8 +33,7 @@ export const galleryItems = [
     category: "Treatments",
     description:
       "A glimpse into the tactile world of massage and restorative care.",
-    image:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[2].src,
   },
   {
     id: "gallery-04",
@@ -42,8 +41,7 @@ export const galleryItems = [
     category: "Beauty",
     description:
       "A considered moment inspired by Velloria's facial rituals.",
-    image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[3].src,
   },
   {
     id: "gallery-05",
@@ -51,8 +49,7 @@ export const galleryItems = [
     category: "Rituals",
     description:
       "Natural textures and gentle warmth evoke the slower side of wellness.",
-    image:
-      "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[4].src,
   },
   {
     id: "gallery-06",
@@ -60,8 +57,7 @@ export const galleryItems = [
     category: "The Space",
     description:
       "An atmosphere designed to help the outside world feel a little further away.",
-    image:
-      "https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[5].src,
   },
   {
     id: "gallery-07",
@@ -69,8 +65,7 @@ export const galleryItems = [
     category: "Wellness",
     description:
       "A visual expression of the restorative philosophy behind the Velloria experience.",
-    image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[6].src,
   },
   {
     id: "gallery-08",
@@ -78,8 +73,7 @@ export const galleryItems = [
     category: "Rituals",
     description:
       "Small sensory details become part of a more intentional visit.",
-    image:
-      "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[7].src,
   },
   {
     id: "gallery-09",
@@ -87,8 +81,7 @@ export const galleryItems = [
     category: "Beauty",
     description:
       "A serene visual inspired by the feeling of emerging refreshed.",
-    image:
-      "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=85",
+    image: pagePhotography.gallery[8].src,
   },
   {
     id: "gallery-10",
@@ -96,8 +89,7 @@ export const galleryItems = [
     category: "The Space",
     description:
       "A final invitation to slow down, settle in and make the moment yours.",
-    image:
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=85",
+    image: pagePhotography.gallery[9].src,
     featured: true,
   },
 ] satisfies GalleryItem[];
@@ -110,3 +102,6 @@ export const galleryCategories = [
   "Beauty",
   "Rituals",
 ] as const;
+
+
+

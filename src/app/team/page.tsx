@@ -26,10 +26,10 @@ export default function TeamPage() {
               fill
               priority
               sizes="100vw"
-              className="object-cover opacity-35"
+              className="object-cover opacity-100"
             />
-            <div className="absolute inset-0 bg-[#201914]/70" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#201914] via-[#201914]/35 to-transparent" />
+            <div className="absolute inset-0 bg-[#201914]/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/85 via-[#201914]/20 to-transparent" />
           </div>
 
           <div className="velloria-container relative">
@@ -64,3 +64,4 @@ export default function TeamPage() {
     </>
   );
 }
+

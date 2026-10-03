@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { GalleryCatalogue } from "@/components/gallery/GalleryCatalogue";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
-import { homeImages } from "@/data/home";
+import { pagePhotography } from "@/data/photography";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -24,15 +24,15 @@ export default function GalleryPage() {
         <section className="relative overflow-hidden bg-[#201914] pt-32 text-white sm:pt-36">
           <div className="absolute inset-0">
             <Image
-              src={homeImages.hero}
-              alt="Velloria spa atmosphere"
+              src={pagePhotography.galleryHero.src}
+              alt={pagePhotography.galleryHero.alt}
               fill
               priority
               sizes="100vw"
-              className="object-cover opacity-35"
+              className="object-cover opacity-100"
             />
-            <div className="absolute inset-0 bg-[#201914]/70" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#201914] via-[#201914]/30 to-transparent" />
+            <div className="absolute inset-0 bg-[#201914]/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/85 via-[#201914]/20 to-transparent" />
           </div>
 
           <div className="velloria-container relative">
@@ -110,3 +110,8 @@ export default function GalleryPage() {
     </>
   );
 }
+
+
+
+
+

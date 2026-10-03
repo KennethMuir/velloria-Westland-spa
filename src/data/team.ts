@@ -56,6 +56,14 @@ export const teamMembers = [
     specialties: ["Body to Body", "Full Body", "Relaxation"],
   },
   {
+    name: "Kitty Hunters",
+    role: "Full Body & Relaxation",
+    experience: "5 years",
+    description:
+      "Kitty brings a calm, attentive rhythm to full-body sessions designed around deep relaxation and unhurried restoration.",
+    specialties: ["Full Body", "Relaxation", "Wellness"],
+  },
+  {
     name: "Kendra",
     role: "Swedish & Couples",
     experience: "7 years",
@@ -86,5 +94,13 @@ export const teamMembers = [
     description:
       "Lulu hosts evening hot stone and couples suites with heated basalt work and a calm, attentive pace.",
     specialties: ["Hot Stone", "Couples", "Swedish"],
+  },
+  {
+    name: "Sahara",
+    role: "Aromatherapy & Wellness",
+    experience: "6 years",
+    description:
+      "Sahara brings a gentle wellness-focused approach, pairing aromatic rituals with flowing treatments and restorative relaxation.",
+    specialties: ["Aromatherapy", "Wellness", "Relaxation"],
   },
 ] satisfies TeamMember[];

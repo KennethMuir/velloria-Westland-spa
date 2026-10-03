@@ -11,7 +11,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function TreatmentsPreview() {
   return (
-    <section className="velloria-section bg-[var(--velloria-ivory)]">
+    <section id="treatments" className="velloria-section bg-[var(--velloria-ivory)]">
       <Container>
         <SectionHeading
           eyebrow="Treatments"
@@ -35,16 +35,14 @@ export function TreatmentsPreview() {
               transition={{ duration: 0.6, delay: index * 0.08 }}
               className="group overflow-hidden rounded-[2rem] border border-[var(--velloria-border)] bg-white/50 transition-all duration-500 hover:-translate-y-1 hover:bg-white hover:shadow-xl"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-64 overflow-hidden bg-black">
                 <Image
                   src={treatment.image}
                   alt={treatment.title}
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain transition-transform duration-700 group-hover:scale-[1.02]"
                 />
-
-                <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" />
 
                 <span className="absolute left-6 top-6 text-xs font-semibold tracking-[0.16em] text-white/80">
                   {treatment.number}
@@ -97,3 +95,6 @@ export function TreatmentsPreview() {
     </section>
   );
 }
+
+
+

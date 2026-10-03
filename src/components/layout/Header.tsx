@@ -20,9 +20,19 @@ export function Header() {
       <nav className="border-b border-white/10 bg-[var(--velloria-deep)]/90 text-white backdrop-blur-xl">
         <div className="velloria-container flex h-[76px] items-center justify-between">
           <Link
-            href="/"
+            href="/#treatments"
             className="group flex items-center"
-            onClick={() => setMobileOpen(false)}
+            onClick={(event) => {
+              setMobileOpen(false);
+
+              if (window.location.pathname === "/") {
+                event.preventDefault();
+                document.getElementById("treatments")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }}
             aria-label="Velloria Westland Spa home"
           >
             <span className="velloria-display text-[2rem] font-medium leading-none tracking-wide">
@@ -93,7 +103,17 @@ export function Header() {
                   >
                     <Link
                       href={item.href}
-                      onClick={() => setMobileOpen(false)}
+                      onClick={(event) => {
+              setMobileOpen(false);
+
+              if (window.location.pathname === "/") {
+                event.preventDefault();
+                document.getElementById("treatments")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }}
                       className="block border-b border-white/10 py-4 text-sm uppercase tracking-[0.12em] text-white/80 transition-colors hover:text-white"
                     >
                       {item.label}
@@ -113,3 +133,5 @@ export function Header() {
     </header>
   );
 }
+
+

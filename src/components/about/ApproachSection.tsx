@@ -33,8 +33,8 @@ export function ApproachSection() {
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:mt-20 lg:grid-cols-[1.35fr_0.65fr]">
           <div className="relative min-h-[26rem] overflow-hidden rounded-[2rem] sm:min-h-[34rem]">
             <Image
-              src={homeImages.detail}
-              alt="Thoughtful detail from a Velloria spa experience"
+              src="https://images.pexels.com/photos/37719647/pexels-photo-37719647.jpeg"
+              alt="Black woman receiving a restorative spa massage"
               fill
               sizes="(max-width: 1024px) 100vw, 65vw"
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
@@ -63,3 +63,4 @@ export function ApproachSection() {
     </section>
   );
 }
+

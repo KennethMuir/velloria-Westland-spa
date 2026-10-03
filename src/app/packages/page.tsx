@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import { pagePhotography } from "@/data/photography";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import {
@@ -18,13 +20,19 @@ export default function PackagesPage() {
       <Header />
 
       <main>
-        <section className="relative overflow-hidden bg-[#201914] pt-36 pb-24 sm:pt-44 sm:pb-32">
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute -right-24 -top-32 h-96 w-96 rounded-full bg-[#9a8068] blur-3xl" />
-            <div className="absolute -bottom-40 left-0 h-96 w-96 rounded-full bg-[#d9c9b5] blur-3xl" />
-          </div>
+        <section className="relative flex min-h-[78vh] items-end overflow-hidden bg-[#201914] pt-32 text-white sm:min-h-[82vh] sm:pt-36">
+          <Image
+            src={pagePhotography.packagesHero.src}
+            alt={pagePhotography.packagesHero.alt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[#201914]/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/70 via-[#201914]/10 to-transparent" />
 
-          <div className="relative">
+          <div className="relative z-10 w-full">
             <div className="velloria-container">
               <div className="max-w-4xl">
                 <p className="velloria-eyebrow mb-5 text-[#d9c9b5]">
@@ -54,3 +62,6 @@ export default function PackagesPage() {
     </>
   );
 }
+
+
+

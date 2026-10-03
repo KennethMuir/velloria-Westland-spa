@@ -28,7 +28,7 @@ export default function ContactPage() {
 
         <ContactInformation />
 
-        <section className="velloria-section bg-[var(--velloria-cream)]">
+        <section id="send-enquiry" className="velloria-section bg-[var(--velloria-cream)]">
           <div className="velloria-container">
             <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start lg:gap-20">
               <div className="lg:sticky lg:top-32">
@@ -108,3 +108,4 @@ export default function ContactPage() {
     </>
   );
 }
+

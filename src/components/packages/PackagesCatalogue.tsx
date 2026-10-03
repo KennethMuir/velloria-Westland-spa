@@ -102,7 +102,7 @@ export function PackagesCatalogue() {
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/60 via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/40 via-transparent to-transparent opacity-60" />
 
                   <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full bg-[#fffdf9]/90 px-3.5 py-2 text-xs font-semibold tracking-wide text-[#33271f] backdrop-blur-sm">
                     <span>{spaPackage.number}</span>
@@ -190,3 +190,4 @@ export function PackagesCta() {
     </section>
   );
 }
+

@@ -101,7 +101,7 @@ export default async function PackageDetailPage({
               className="object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/90 via-[#201914]/25 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/85 via-[#201914]/20 to-transparent" />
 
             <div className="velloria-container absolute inset-x-0 bottom-0 pb-10 sm:pb-14 lg:pb-16">
               <div className="max-w-5xl">
@@ -358,3 +358,4 @@ export default async function PackageDetailPage({
     </>
   );
 }
+
