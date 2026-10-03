@@ -7,9 +7,9 @@ import { TeamCatalogue } from "@/components/team/TeamCatalogue";
 import { homeImages } from "@/data/home";
 
 export const metadata: Metadata = {
-  title: "Our Team",
+  title: "Spa Therapists & Wellness Team in Westlands, Nairobi",
   description:
-    "Meet the therapists behind the Velloria Westland Spa experience in Westlands, Nairobi.",
+    "Meet the therapists behind the Velloria Westland Spa experience in Westlands, Nairobi, with different areas of focus, technique and rhythm.",
 };
 
 export default function TeamPage() {
@@ -64,4 +64,5 @@ export default function TeamPage() {
     </>
   );
 }
+
 

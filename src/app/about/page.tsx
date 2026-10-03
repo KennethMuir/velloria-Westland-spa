@@ -8,9 +8,9 @@ import { ApproachSection } from "@/components/about/ApproachSection";
 import { PhilosophySection } from "@/components/about/PhilosophySection";
 
 export const metadata: Metadata = {
-  title: "About Velloria",
+  title: "About Velloria Westland Spa in Westlands, Nairobi",
   description:
-    "Discover the philosophy and considered approach behind Velloria Westland Spa in Westlands, Nairobi.",
+    "Discover the philosophy, treatments and considered wellness approach behind Velloria Westland Spa in Westlands, Nairobi.",
 };
 
 export default function AboutPage() {
@@ -30,3 +30,4 @@ export default function AboutPage() {
     </>
   );
 }
+

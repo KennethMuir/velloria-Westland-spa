@@ -9,9 +9,9 @@ import {
 } from "@/components/packages/PackagesCatalogue";
 
 export const metadata: Metadata = {
-  title: "Packages",
+  title: "Spa Packages & Day Retreats in Westlands, Nairobi",
   description:
-    "Explore restorative spa packages and signature wellness experiences at Velloria Westland Spa.",
+    "Explore spa packages, wellness journeys, beauty rituals and day retreat experiences at Velloria Westland Spa in Westlands, Nairobi.",
 };
 
 export default function PackagesPage() {
@@ -62,6 +62,7 @@ export default function PackagesPage() {
     </>
   );
 }
+
 
 
 

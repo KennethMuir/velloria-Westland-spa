@@ -10,9 +10,9 @@ import { pagePhotography } from "@/data/photography";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Gallery",
+  title: "Spa Gallery & Wellness Experience in Westlands, Nairobi",
   description:
-    "Explore the atmosphere, rituals and visual mood of Velloria Westland Spa in Westlands, Nairobi.",
+    "Explore the spa atmosphere, treatments, rituals and wellness experience at Velloria Westland Spa on Stima Lane, Westlands, Nairobi.",
 };
 
 export default function GalleryPage() {
@@ -110,6 +110,7 @@ export default function GalleryPage() {
     </>
   );
 }
+
 
 
 

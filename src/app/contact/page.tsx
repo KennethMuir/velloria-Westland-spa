@@ -13,9 +13,9 @@ import { homeImages } from "@/data/home";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Contact & Visit",
+  title: "Contact Velloria Westland Spa in Westlands, Nairobi",
   description:
-    "Get in touch with Velloria Westland Spa, plan your visit on Stima Lane in Westlands, Nairobi, or send a general enquiry.",
+    "Find Velloria Westland Spa on Stima Lane in Westlands, Nairobi. Contact us about massage, facials, spa treatments, packages and wellness experiences.",
 };
 
 export default function ContactPage() {
@@ -108,4 +108,5 @@ export default function ContactPage() {
     </>
   );
 }
+
 

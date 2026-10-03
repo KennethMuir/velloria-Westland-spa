@@ -38,8 +38,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: treatment.title,
-    description: treatment.shortDescription,
+    title: `${treatment.title} in Westlands, Nairobi`,
+    description: `${treatment.shortDescription} Experience ${treatment.title.toLowerCase()} at Velloria Westland Spa in Westlands, Nairobi.`,
   };
 }
 
@@ -259,3 +259,4 @@ export default async function TreatmentDetailPage({
     </>
   );
 }
+
