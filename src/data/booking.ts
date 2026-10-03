@@ -1,4 +1,5 @@
 import { getPackageBySlug } from "@/data/packages";
+import { siteConfig } from "@/data/site";
 import { getTreatmentBySlug } from "@/data/treatments";
 
 export type BookingSelectionType = "treatment" | "package";
@@ -52,5 +53,8 @@ export function getBookingSelection(
 }
 
 export function createBookingWhatsAppUrl(message: string) {
-  return `https://wa.me/254115980301?text=${encodeURIComponent(message)}`;
+  return `${siteConfig.whatsappUrl}?text=${encodeURIComponent(message)}`;
 }
+
+
+
