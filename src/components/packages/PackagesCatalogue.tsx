@@ -6,6 +6,7 @@ import { ArrowUpRight, Clock, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { siteConfig } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 import {
   packageCategories,
@@ -176,7 +177,7 @@ export function PackagesCta() {
             <Button href="/book">Book Your Visit</Button>
 
             <a
-              href="https://wa.me/254115980301"
+              href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="velloria-button inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#33271f] px-6 text-sm font-semibold tracking-wide text-[#ffffff] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#201914] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9a8068] focus-visible:ring-offset-2"
@@ -190,4 +191,3 @@ export function PackagesCta() {
     </section>
   );
 }
-
