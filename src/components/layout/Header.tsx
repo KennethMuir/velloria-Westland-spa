@@ -3,13 +3,50 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState("");
+
+  useEffect(() => {
+    const updateCurrentPath = () => {
+      setCurrentPath(
+        `${window.location.pathname}${window.location.hash}`
+      );
+    };
+
+    updateCurrentPath();
+    window.addEventListener("popstate", updateCurrentPath);
+    window.addEventListener("hashchange", updateCurrentPath);
+
+    return () => {
+      window.removeEventListener("popstate", updateCurrentPath);
+      window.removeEventListener("hashchange", updateCurrentPath);
+    };
+  }, []);
+
+  const isActive = (href: string) => {
+    if (href === "/#treatments") {
+      return currentPath === "/" || currentPath === "/#treatments";
+    }
+
+    if (href === "/team#featured-team") {
+      return currentPath === "/team" || currentPath === "/team#featured-team";
+    }
+
+    if (href === "/contact#send-enquiry") {
+      return (
+        currentPath === "/contact" ||
+        currentPath === "/contact#send-enquiry"
+      );
+    }
+
+    return currentPath === href;
+  };
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
@@ -51,10 +88,10 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative py-2 text-[12px] font-medium uppercase tracking-[0.12em] text-white/75 transition-colors duration-300 hover:text-white"
+                className={`relative py-2 text-[12px] font-medium uppercase tracking-[0.12em] transition-colors duration-300 hover:text-white ${isActive(item.href) ? "text-white" : "text-white/75"}`}
               >
                 {item.label}
-                <span className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-white transition-transform duration-300" />
+                <span className={`absolute inset-x-0 bottom-0 h-px origin-left bg-white/70 transition-transform duration-300 ${isActive(item.href) ? "scale-x-100" : "scale-x-0"}`} />
               </Link>
             ))}
           </div>
@@ -114,7 +151,7 @@ export function Header() {
                 });
               }
             }}
-                      className="block border-b border-white/10 py-4 text-sm uppercase tracking-[0.12em] text-white/80 transition-colors hover:text-white"
+                      className={`block border-b border-white/10 py-4 text-sm uppercase tracking-[0.12em] transition-colors hover:text-white ${isActive(item.href) ? "text-white" : "text-white/80"}`}
                     >
                       {item.label}
                     </Link>
@@ -133,5 +170,6 @@ export function Header() {
     </header>
   );
 }
+
 
 
