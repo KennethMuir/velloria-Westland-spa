@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import { aboutPage } from "@/data/about";
 
 export function AboutPillars() {
@@ -35,9 +36,19 @@ export function AboutPillars() {
                 </p>
               </div>
 
-              <div className="hidden h-11 w-11 items-center justify-center rounded-full border border-[#33271f]/10 text-[#9a8068] transition-all duration-500 group-hover:-translate-y-1 group-hover:bg-[#33271f] group-hover:text-white sm:flex">
+              <Link
+                href={
+                  pillar.title === "Restore"
+                    ? "/treatments"
+                    : pillar.title === "Reconnect"
+                      ? "/gallery"
+                      : "/packages"
+                }
+                aria-label={`Explore ${pillar.title}`}
+                className="hidden h-11 w-11 items-center justify-center rounded-full border border-[#33271f]/10 text-[#9a8068] transition-all duration-500 group-hover:-translate-y-1 group-hover:bg-[#33271f] group-hover:text-white sm:flex"
+              >
                 <ArrowUpRight size={17} strokeWidth={1.5} />
-              </div>
+              </Link>
             </article>
           ))}
         </div>
@@ -45,3 +56,11 @@ export function AboutPillars() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
