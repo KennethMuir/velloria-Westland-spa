@@ -102,7 +102,7 @@ export function Header() {
             </div>
 
             <div className="hidden sm:block">
-              <Button href="/book">Book Now</Button>
+              <Button href="/book#booking-form">Book Now</Button>
             </div>
 
             <button
@@ -160,7 +160,7 @@ export function Header() {
               </div>
 
               <div className="mt-5 grid grid-cols-2 gap-3">
-                <Button href="/book">Book Now</Button>
+                <Button href="/book#booking-form">Book Now</Button>
                 <WhatsAppButton label="WhatsApp" />
               </div>
             </div>
@@ -170,6 +170,7 @@ export function Header() {
     </header>
   );
 }
+
 
 
 

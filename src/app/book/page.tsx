@@ -83,7 +83,7 @@ export default async function BookingPage({
           </div>
         </section>
 
-        <section className="velloria-section">
+        <section id="booking-form" className="velloria-section">
           <div className="velloria-container">
             <BookingForm initialSelection={selection} />
           </div>
@@ -94,3 +94,4 @@ export default async function BookingPage({
     </>
   );
 }
+
