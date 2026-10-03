@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { aboutPage } from "@/data/about";
-import { homeImages } from "@/data/home";
 
 export function ApproachSection() {
   return (
@@ -63,4 +62,5 @@ export function ApproachSection() {
     </section>
   );
 }
+
 
