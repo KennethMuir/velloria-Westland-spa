@@ -8,7 +8,7 @@ export const siteConfig = {
   mapsUrl: "https://maps.google.com/?q=Stima+Lane+Westlands+Nairobi",
   navigation: [
     { label: "Home", href: "/#treatments" },
-    { label: "About", href: "/about" },
+    { label: "About", href: "/about#philosophy" },
     { label: "Treatments", href: "/treatments" },
     { label: "Packages", href: "/packages" },
     { label: "Our Team", href: "/team#featured-team" },
@@ -16,6 +16,7 @@ export const siteConfig = {
     { label: "Contact", href: "/contact#send-enquiry" },
   ],
 } as const;
+
 
 
 

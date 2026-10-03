@@ -4,7 +4,7 @@ import { homeImages } from "@/data/home";
 
 export function PhilosophySection() {
   return (
-    <section className="velloria-section overflow-hidden bg-[#f8f5ef]">
+    <section id="philosophy" className="velloria-section overflow-hidden bg-[#f8f5ef]">
       <div className="velloria-container">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-20">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
@@ -44,3 +44,4 @@ export function PhilosophySection() {
     </section>
   );
 }
+
