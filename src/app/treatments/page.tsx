@@ -9,6 +9,7 @@ import {
 } from "@/components/treatments/TreatmentsCatalogue";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/treatments" },
   title: "Massage, Facials & Spa Treatments in Westlands, Nairobi",
   description:
     "Explore restorative massage, deep tissue massage, facials, body rituals and wellness treatments at Velloria Westland Spa in Westlands, Nairobi.",

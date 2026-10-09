@@ -8,6 +8,7 @@ import { getBookingSelection } from "@/data/booking";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/book" },
   title: "Book Your Visit",
   description:
     "Make a booking enquiry with Velloria Westland Spa in Westlands, Nairobi.",

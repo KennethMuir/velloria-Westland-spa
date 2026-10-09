@@ -42,6 +42,7 @@ export async function generateMetadata({
   }
 
   return {
+    alternates: { canonical: `/packages/${spaPackage.slug}` },
     title: `${spaPackage.title} | Spa Package in Westlands, Nairobi`,
     description: `${spaPackage.shortDescription} Experience this spa package at Velloria Westland Spa in Westlands, Nairobi.`,
   };

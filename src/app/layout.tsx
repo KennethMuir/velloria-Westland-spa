@@ -3,6 +3,7 @@ import "./globals.css";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://velloriawestlandspa.com"),
   title: {
     default: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
     template: "%s | Velloria Westland Spa",

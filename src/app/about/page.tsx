@@ -8,6 +8,7 @@ import { ApproachSection } from "@/components/about/ApproachSection";
 import { PhilosophySection } from "@/components/about/PhilosophySection";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Velloria Westland Spa in Westlands, Nairobi",
   description:
     "Discover the philosophy, treatments and considered wellness approach behind Velloria Westland Spa in Westlands, Nairobi.",
