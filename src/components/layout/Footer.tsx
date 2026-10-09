@@ -87,6 +87,29 @@ export function Footer() {
           <p>© {new Date().getFullYear()} Velloria Westland Spa.</p>
           <p>Wellness, beauty & restoration.</p>
         </div>
+
+        <div className="mt-5 flex flex-col items-start gap-2 text-right text-xs text-white/45 sm:items-end">
+          <p>
+            Website by{" "}
+            <a
+              href="https://trendingeventcreativestudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/65 transition-colors hover:text-white"
+            >
+              TrendingEvent Creative Studio
+            </a>
+          </p>
+
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=trendingevent@gmail.com&su=Website%20Design%20Enquiry"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-white"
+          >
+            Contact us
+          </a>
+        </div>
       </div>
     </footer>
   );
