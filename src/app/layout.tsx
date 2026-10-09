@@ -48,6 +48,12 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
+    images: [
+      {
+        url: "https://images.pexels.com/photos/36482974/pexels-photo-36482974.jpeg?auto=compress&cs=tinysrgb&w=2200",
+        alt: "Elegant African woman relaxing in a softly lit luxury spa environment",
+      },
+    ],
     type: "website",
     locale: "en_KE",
     siteName: "Velloria Westland Spa",
@@ -57,6 +63,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    images: [
+      "https://images.pexels.com/photos/36482974/pexels-photo-36482974.jpeg?auto=compress&cs=tinysrgb&w=2200",
+    ],
     title: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
     description:
       "Spa, massage, facials, body rituals and wellness experiences at Velloria Westland Spa in Westlands, Nairobi.",
