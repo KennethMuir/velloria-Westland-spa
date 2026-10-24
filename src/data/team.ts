@@ -61,7 +61,7 @@ export const teamMembers = [
     experience: "5 years",
     description:
       "Kitty brings a calm, attentive rhythm to full-body sessions designed around deep relaxation and unhurried restoration.",
-    specialties: ["Full Body", "Relaxation", "Wellness"],
+    specialties: ["Full Body", "Relaxation", "Relaxation"],
   },
   {
     name: "Kendra",
@@ -97,10 +97,11 @@ export const teamMembers = [
   },
   {
     name: "Sahara",
-    role: "Aromatherapy & Wellness",
+    role: "Aromatherapy & Relaxation",
     experience: "6 years",
     description:
-      "Sahara brings a gentle wellness-focused approach, pairing aromatic rituals with flowing treatments and restorative relaxation.",
-    specialties: ["Aromatherapy", "Wellness", "Relaxation"],
+      "Sahara brings a gentle relaxation-focused approach, pairing aromatic rituals with flowing treatments and restorative relaxation.",
+    specialties: ["Aromatherapy", "Relaxation", "Relaxation"],
   },
 ] satisfies TeamMember[];
+

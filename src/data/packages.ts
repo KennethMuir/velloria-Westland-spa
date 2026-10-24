@@ -17,7 +17,7 @@ export type SpaPackage = {
 export const packageCategories = [
   "All",
   "Signature Escapes",
-  "Wellness Journeys",
+  "Relaxation Journeys",
   "Beauty Rituals",
 ] as const;
 
@@ -45,7 +45,7 @@ export const packages: SpaPackage[] = [
   {
     slug: "deep-reset",
     number: "02",
-    category: "Wellness Journeys",
+    category: "Relaxation Journeys",
     title: "Deep Reset",
     shortDescription:
       "A grounding combination of focused massage and nourishing body care for days when you need to truly reset.",
@@ -85,7 +85,7 @@ export const packages: SpaPackage[] = [
   {
     slug: "velloria-day-retreat",
     number: "04",
-    category: "Wellness Journeys",
+    category: "Relaxation Journeys",
     title: "The Velloria Day Retreat",
     shortDescription:
       "A fuller day of restoration bringing together bodywork, facial care, body ritual and peaceful restorative pauses.",
@@ -118,6 +118,7 @@ export const featuredPackages = packages.filter(
 export function getPackageBySlug(slug: string) {
   return packages.find((spaPackage) => spaPackage.slug === slug);
 }
+
 
 
 

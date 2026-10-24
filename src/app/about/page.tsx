@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
   title: "About Velloria Westland Spa in Westlands, Nairobi",
   description:
-    "Discover the philosophy, treatments and considered wellness approach behind Velloria Westland Spa in Westlands, Nairobi.",
+    "Discover the philosophy, treatments and considered relaxation approach behind Velloria Westland Spa in Westlands, Nairobi.",
 };
 
 export default function AboutPage() {
@@ -31,4 +31,5 @@ export default function AboutPage() {
     </>
   );
 }
+
 

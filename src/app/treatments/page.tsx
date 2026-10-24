@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/treatments" },
   title: "Massage, Facials & Spa Treatments in Westlands, Nairobi",
   description:
-    "Explore restorative massage, deep tissue massage, facials, body rituals and wellness treatments at Velloria Westland Spa in Westlands, Nairobi.",
+    "Explore restorative massage, deep tissue massage, facials, body rituals and relaxation treatments at Velloria Westland Spa in Westlands, Nairobi.",
 };
 
 export default function TreatmentsPage() {
@@ -64,6 +64,7 @@ export default function TreatmentsPage() {
     </>
   );
 }
+
 
 
 

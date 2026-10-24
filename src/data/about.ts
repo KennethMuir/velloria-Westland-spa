@@ -11,7 +11,7 @@ export const aboutPage = {
     "Velloria Westland Spa is imagined as a sanctuary from the pace of everyday life — a place where thoughtful treatments, warm hospitality and restorative stillness come together.",
   philosophy: {
     eyebrow: "Our philosophy",
-    title: "Wellness should feel unhurried.",
+    title: "Relaxation should feel unhurried.",
     paragraphs: [
       "We believe the most restorative experiences begin when there is room to slow down. Velloria is designed around that simple idea: give yourself permission to pause, breathe and be cared for.",
       "From the treatment itself to the moments before and after it, every part of the experience is intended to feel considered. Nothing needs to be rushed. Nothing needs to compete for your attention.",
@@ -50,3 +50,4 @@ export const aboutPage = {
       "Whether you have an afternoon to yourself or are marking a special occasion, Velloria is a place to pause and make the moment yours.",
   },
 } as const;
+

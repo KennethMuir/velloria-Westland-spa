@@ -9,7 +9,7 @@ export const homeImages = {
   interior: pagePhotography.home.interior.src,
   detail: pagePhotography.home.detail.src,
   galleryReception: pagePhotography.home.homeGallery.reception.src,
-  galleryWellness: pagePhotography.home.homeGallery.wellness.src,
+  galleryRelaxation: pagePhotography.home.homeGallery.relaxation.src,
   galleryPortrait: pagePhotography.home.homeGallery.portrait.src,
   galleryQuiet: pagePhotography.home.homeGallery.quiet.src,
 } as const;
@@ -107,8 +107,8 @@ export const galleryItems = [
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    label: "Wellness ritual",
-    image: homeImages.galleryWellness,
+    label: "Relaxation ritual",
+    image: homeImages.galleryRelaxation,
     className: "md:row-span-2",
   },
   {
@@ -122,4 +122,5 @@ export const galleryItems = [
     className: "",
   },
 ] as const;
+
 

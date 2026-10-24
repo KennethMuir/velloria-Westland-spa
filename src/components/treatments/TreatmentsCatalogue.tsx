@@ -39,7 +39,7 @@ export function TreatmentsCatalogue() {
           </div>
 
           <p className="max-w-md text-sm leading-7 text-[#6d5d50] lg:pb-1">
-            Explore considered massage, facial, body and wellness rituals
+            Explore considered massage, facial, body and relaxation rituals
             created to give you a quieter moment away from the pace of the day.
           </p>
         </div>
@@ -165,4 +165,5 @@ export function TreatmentsCta() {
     </section>
   );
 }
+
 

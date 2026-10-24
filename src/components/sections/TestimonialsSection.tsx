@@ -19,7 +19,7 @@ export function TestimonialsSection() {
               at the door.
             </>
           }
-          description="A few words from guests who have made Velloria part of their wellness ritual."
+          description="A few words from guests who have made Velloria part of their relaxation ritual."
         />
 
         <div className="mt-12 grid gap-4 lg:grid-cols-3">
@@ -57,3 +57,4 @@ export function TestimonialsSection() {
     </section>
   );
 }
+

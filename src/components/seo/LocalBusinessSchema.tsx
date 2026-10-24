@@ -6,7 +6,7 @@ export function LocalBusinessSchema() {
     "@type": "DaySpa",
     name: siteConfig.name,
     description:
-      "A refined wellness destination in Westlands, Nairobi, offering restorative treatments, spa rituals and personalized relaxation experiences.",
+      "Velloria Westland Spa in Westlands, Nairobi offers restorative massage, deep tissue massage, facials and spa treatments.",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Stima Lane",
@@ -34,3 +34,4 @@ export function LocalBusinessSchema() {
     />
   );
 }
+

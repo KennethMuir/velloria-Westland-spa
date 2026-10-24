@@ -85,7 +85,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Velloria Westland Spa.</p>
-          <p>Wellness, beauty & restoration.</p>
+          <p>Relaxation, beauty & restoration.</p>
         </div>
 
         <div className="mt-5 flex flex-col items-start gap-2 text-right text-xs text-white/45 sm:items-end">
@@ -114,3 +114,4 @@ export function Footer() {
     </footer>
   );
 }
+

@@ -18,7 +18,7 @@ export function ExperienceSection() {
               Time to restore.
             </>
           }
-          description="We are creating a modern wellness destination where thoughtful treatments, beautiful surroundings and unhurried service come together."
+          description="We are creating a modern relaxation destination where thoughtful treatments, beautiful surroundings and unhurried service come together."
         />
 
         <div className="mt-12 grid gap-px overflow-hidden rounded-[2rem] border border-[var(--velloria-border)] bg-[var(--velloria-border)] md:grid-cols-3">
@@ -49,3 +49,4 @@ export function ExperienceSection() {
     </section>
   );
 }
+

@@ -68,17 +68,17 @@ interior: {
 
   details: {
     src: "https://images.pexels.com/photos/6620838/pexels-photo-6620838.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    alt: "Spa tray with carefully arranged wellness products and candlelight",
-  },
-
-  wellness: {
-    src: "https://images.pexels.com/photos/6724514/pexels-photo-6724514.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    alt: "African woman enjoying a quiet wellness moment indoors",
+    alt: "Spa tray with carefully arranged relaxation products and candlelight",
   },
 
   relaxation: {
+    src: "https://images.pexels.com/photos/6724514/pexels-photo-6724514.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    alt: "African woman enjoying a quiet relaxation moment indoors",
+  },
+
+  postTreatmentRelaxation: {
     src: "https://images.pexels.com/photos/5938440/pexels-photo-5938440.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    alt: "Black woman enjoying a serene post-treatment wellness experience",
+    alt: "Black woman enjoying a serene post-treatment relaxation experience",
   },
 
   team: [
@@ -142,8 +142,8 @@ interior: {
   facialClose: SpaPhotography;
   lounge: SpaPhotography;
   details: SpaPhotography;
-  wellness: SpaPhotography;
   relaxation: SpaPhotography;
+  postTreatmentRelaxation: SpaPhotography;
   team: SpaPhotography[];
 };
 
@@ -199,7 +199,7 @@ massage: {
         src: "https://images.pexels.com/photos/11189023/pexels-photo-11189023.jpeg?auto=compress&cs=tinysrgb&w=1800",
         alt: "Black woman in a sophisticated black dress seated in an elegant interior",
       },
-      wellness: {
+      relaxation: {
         src: "https://images.unsplash.com/photo-1594737996820-af7654631790?auto=format&fit=crop&w=1800&q=85",
         alt: "Black woman in a black and white dress enjoying an outdoor setting",
       },
@@ -213,7 +213,7 @@ massage: {
         src: "https://images.unsplash.com/photo-1698171975916-23327518cc4a?auto=format&fit=crop&w=1800&q=85",
         alt: "Black woman posing elegantly beneath a dramatic sky",
       },
-      wellness: {
+      relaxation: {
         src: "https://images.unsplash.com/photo-1721602328308-2b189b0fc3ed?auto=format&fit=crop&w=1800&q=85",
         alt: "Black woman with braids looking upward in an outdoor portrait",
       },
@@ -317,12 +317,12 @@ packages: {
     gallery: {
       reception: SpaPhotography;
       treatmentRoom: SpaPhotography;
-      wellness: SpaPhotography;
+      relaxation: SpaPhotography;
       quietDetails: SpaPhotography;
     };
     homeGallery: {
       reception: SpaPhotography;
-      wellness: SpaPhotography;
+      relaxation: SpaPhotography;
       portrait: SpaPhotography;
       quiet: SpaPhotography;
     };
@@ -345,6 +345,7 @@ packages: {
     hero: SpaPhotography;
   };
 };
+
 
 
 

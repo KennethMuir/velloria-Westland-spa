@@ -22,7 +22,7 @@ export const galleryItems = [
   {
     id: "gallery-02",
     title: "Restorative stillness",
-    category: "Wellness",
+    category: "Relaxation",
     description:
       "Soft textures and warm tones create space for a slower rhythm.",
     image: pagePhotography.gallery[1].src,
@@ -48,7 +48,7 @@ export const galleryItems = [
     title: "Warm touch",
     category: "Rituals",
     description:
-      "Natural textures and gentle warmth evoke the slower side of wellness.",
+      "Natural textures and gentle warmth evoke the slower side of relaxation.",
     image: pagePhotography.gallery[4].src,
   },
   {
@@ -62,7 +62,7 @@ export const galleryItems = [
   {
     id: "gallery-07",
     title: "Restore and renew",
-    category: "Wellness",
+    category: "Relaxation",
     description:
       "A visual expression of the restorative philosophy behind the Velloria experience.",
     image: pagePhotography.gallery[6].src,
@@ -98,10 +98,11 @@ export const galleryCategories = [
   "All",
   "The Space",
   "Treatments",
-  "Wellness",
+  "Relaxation",
   "Beauty",
   "Rituals",
 ] as const;
+
 
 
 

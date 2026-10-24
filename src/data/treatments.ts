@@ -24,7 +24,7 @@ export const treatmentCategories = [
   "Massage",
   "Facials",
   "Body Rituals",
-  "Wellness",
+  "Relaxation",
   "Beauty",
 ] as const;
 
@@ -141,7 +141,7 @@ export const treatments: Treatment[] = [
       "A renewing exfoliation ritual created to leave the skin smooth, supple and beautifully refreshed.",
     description:
       "A focused body ritual centred on gentle exfoliation and nourishing aftercare. It is designed for guests looking for a fresh, polished feeling without the longer sequence of a full body ritual.",
-    image: spaPhotography.wellness.src,
+    image: spaPhotography.relaxation.src,
     durations: [
       { label: "60 min", minutes: 60, price: "On request" },
     ],
@@ -153,14 +153,14 @@ export const treatments: Treatment[] = [
     featured: false,
   },
   {
-    slug: "mindful-wellness-ritual",
+    slug: "mindful-relaxation-ritual",
     number: "07",
-    category: "Wellness",
-    title: "Mindful Wellness Ritual",
+    category: "Relaxation",
+    title: "Mindful Relaxation Ritual",
     shortDescription:
       "A slower experience combining calming touch and restorative moments for body and mind.",
     description:
-      "A deliberately unhurried wellness experience for days when you need to step away from the noise. The ritual brings together calming bodywork and quiet restorative moments in a sequence designed around relaxation.",
+      "A deliberately unhurried relaxation experience for days when you need to step away from the noise. The ritual brings together calming bodywork and quiet restorative moments in a sequence designed around relaxation.",
     image: spaPhotography.relaxation.src,
     durations: [
       { label: "90 min", minutes: 90, price: "On request" },
@@ -202,6 +202,7 @@ export const featuredTreatments = treatments.filter(
 export function getTreatmentBySlug(slug: string) {
   return treatments.find((treatment) => treatment.slug === slug);
 }
+
 
 
 

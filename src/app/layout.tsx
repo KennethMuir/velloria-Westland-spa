@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Velloria Westland Spa",
   },
   description:
-    "Velloria Westland Spa in Westlands, Nairobi offers restorative massage, deep tissue massage, facials, body rituals, beauty treatments and personalised wellness experiences.",
+    "Velloria Westland Spa in Westlands, Nairobi offers restorative massage, deep tissue massage, facials, body treatments and beauty services.",
   keywords: [
     "Velloria Westland Spa",
     "spa in Westlands",
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     "facial Nairobi",
     "facial treatments Nairobi",
     "body treatments Nairobi",
-    "wellness spa Nairobi",
+    "spa treatments Westlands",
     "day spa Nairobi",
     "luxury spa Nairobi",
     "spa packages Nairobi",
     "spa for tourists in Nairobi",
-    "wellness experience Nairobi",
+    "massage spa Westlands",
   ],
   authors: [{ name: "Velloria Westland Spa" }],
   creator: "Velloria Westland Spa",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "Velloria Westland Spa",
     title: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
     description:
-      "A refined spa and wellness destination in Westlands, Nairobi offering restorative massage, deep tissue massage, facials, body rituals and beauty treatments.",
+      "A spa in Westlands, Nairobi offering restorative massage, deep tissue massage, facials, body treatments and beauty services.",
   },
   twitter: {
     card: "summary_large_image",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     ],
     title: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
     description:
-      "Spa, massage, facials, body rituals and wellness experiences at Velloria Westland Spa in Westlands, Nairobi.",
+      "Massage, facials and spa treatments at Velloria Westland Spa in Westlands, Nairobi.",
   },
 };
 
@@ -86,3 +86,4 @@ export default function RootLayout({
     </html>
   );
 }
+

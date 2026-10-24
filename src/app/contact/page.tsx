@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   title: "Contact Velloria Westland Spa in Westlands, Nairobi",
   description:
-    "Find Velloria Westland Spa on Stima Lane in Westlands, Nairobi. Contact us about massage, facials, spa treatments, packages and wellness experiences.",
+    "Find Velloria Westland Spa on Stima Lane in Westlands, Nairobi. Contact us about massage, facials, spa treatments, packages and relaxation experiences.",
 };
 
 export default function ContactPage() {
@@ -109,5 +109,6 @@ export default function ContactPage() {
     </>
   );
 }
+
 
 
