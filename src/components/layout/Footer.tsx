@@ -97,7 +97,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="text-white/65 transition-colors hover:text-white"
             >
-              TrendingEvent Creative Studio
+              KEITIEM DIGITAL LABS
             </a>
           </p>
 
